@@ -33,8 +33,6 @@ server {
         try_files $uri /index.php$is_args$args;
     }
 
-
-
     location ~ ^/index\.php(/|$) {
         fastcgi_pass unix:/var/run/php-fpm/www.sock;
         fastcgi_split_path_info ^(.+\.php)(/.*)$;
