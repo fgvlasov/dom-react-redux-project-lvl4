@@ -22,11 +22,11 @@ composer create-project symfony/skeleton local2.natmatch.org
 
 ```
 server {
-listen       80;
-server_name  local2.natmatch.org www.local2.natmatch.org;
-access_log   /var/log/nginx/access.local2.natmatch.org.log main;
-error_log    /var/log/nginx/error.local2.natmatch.org.log warn;
-root   /var/www/local2.natmatch.org/public;
+    listen       80;
+    server_name  local2.natmatch.org www.local2.natmatch.org;
+    access_log   /var/log/nginx/access.local2.natmatch.org.log main;
+    error_log    /var/log/nginx/error.local2.natmatch.org.log warn;
+    root   /var/www/local2.natmatch.org/public;
 
     location / {
         # try to serve file directly, fallback to index.php
