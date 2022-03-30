@@ -50,6 +50,15 @@ server {
 }
 ```
 
+## mount shared folder from the vmware server to local PC
+file /ets/fstab contents
+
+```
+#
+UUID=bd5b878a-03e3-4990-9a26-3b36218b66a2       /                                       xfs                     defaults,noatime        1       1
+.host:/Huron2                                   /var/www/local2.natmatch.org            fuse.vmhgfs-fuse        defaults,allow_other    0       0
+```
+
 ## install nodeJS v16.x.y
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
 
