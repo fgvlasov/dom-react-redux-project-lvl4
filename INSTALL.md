@@ -63,3 +63,6 @@ UUID=bd5b878a-03e3-4990-9a26-3b36218b66a2       /                               
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
 
 yum install nodejs
+
+## install Symfony Encore
+composer require symfony/webpack-encore-bundle
