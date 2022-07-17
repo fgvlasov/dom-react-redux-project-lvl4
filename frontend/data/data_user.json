@@ -1,0 +1,17 @@
+{
+	"user": {
+		"email": "tester+app@natmatch.com",
+		"password": "**********",
+		"sequrity_question_1": "Name of street you lived on in third grade",
+		"sequrity_question_2": "Name of school you attended in sixth grade",
+		"sequrity_answer_1": "Brevoort",
+		"sequrity_answer_2": "Bell",
+		"first_name": "Adriana",
+		"gender": "Female",
+		"last_name": "Crowford",
+		"primary_phone": "985025465",
+		"alt_phone": "985576735",
+		"primary_phone_text": "985025465 (Primary)",
+		"alt_phone_text": "985576735 (Alt)"
+	}
+}

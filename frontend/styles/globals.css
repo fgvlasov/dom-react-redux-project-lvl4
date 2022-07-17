@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.mainContainer { min-height: calc(100vh - 64px - 56px);}
+@media (max-width: 767px) {
+	.leftMenuNav {
+		position: fixed;
+		top: 66px;
+		bottom: 0;
+		left: 0;
+		z-index: 100;
+		transition: all 200ms;
+		transform: translate3d(0%, 0, 0);
+		background: #fff;
+		width: 240px;
+		border-right: 1px solid #CCC;
+	}
+}
+@media (min-width: 768px) {
+	.leftMenuNav {	
+		display: none;;
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"_000_020_email": {
+		"attr_type": "email",
+		"attr_title": "Email",
+		"helpText" : "You can`t change your email",
+		"attr_label":
+			{
+			"_00":  "Email",
+			"_01_appic":  "Email",
+			"_02_caspr":  "Email"
+			}
+	},
+	"_000_021_email_new": {
+		"attr_type": "email",
+		"id": "000_021",
+		"attr_label":
+			{
+			"_01_appic":  "New email",
+			"_02_caspr":  "New Email"
+			},
+		"attr_placeholder":
+			{
+			"_01_appic":  "Enter your new email",
+			"_02_caspr":  "Enter your new email"
+			}
+	},
+	"_000_022_email_confirm": {
+		"type": "email",
+		"id": "000_022",
+		"attr_label":
+			{
+			"_01_appic":  "Confirm email",
+			"_02_caspr":  "Confirm Email"
+			},
+		"attr_placeholder":
+			{
+			"_01_appic":  "Confirm your new email",
+			"_02_caspr":  "Confirm your new email"
+			}
+	},
+	"_000_010_text": {
+		"attr_type": "text",
+		"attr_label":
+			{
+			"_00":  "First Name",
+			"_01_appic":  "First Name",
+			"_02_caspr":  "First Name"
+			
+			},
+		"attr_title": "First Name",
+		"attr_placeholder": 
+		{
+			"_00":  "Enter your name",
+			"_01_appic":  "Enter your name",
+			"_02_caspr":  "Enter your name"
+		}			
+		
+	},
+	"_000_011_text": {
+		"attr_type": "text",
+		"attr_label":
+			{
+			"_00":  "Last Name",
+			"_01_appic":  "Last Name",
+			"_02_caspr":  "Last Name"
+			
+			},
+		"attr_title": "Last name",
+		"attr_placeholder": 
+		{
+			"_00":  "Enter your Last name",
+			"_01_appic":  "Enter your Last name",
+			"_02_caspr":  "Enter your Last name"
+		}			
+		
+	},
+	"_000_030_gender": {
+		"attr_type": "checkbox",
+		"attr_label":
+			{
+			"_00":  "Gender",
+			"_01_appic":  "Gender",
+			"_02_caspr":  "Gender"
+			
+			},
+		"genders": ["Male", "Female"],
+			
+		"attr_title": "Last name",
+		"attr_placeholder": 
+		{
+			"_00":  "Enter your Last name",
+			"_01_appic":  "Enter your Last name",
+			"_02_caspr":  "Enter your Last name"
+		}			
+		
+	},
+	"_000_012_phones": {
+		"attr_type": "phones",
+		"attr_label":
+			{
+			"_00":  "Phones",
+			"_01_appic":  "Phones",
+			"_02_caspr":  "Phones"
+			
+			},
+		"attr_title": "Phones",
+		"attr_placeholder": 
+		{
+			"_00":  "Enter your Phones",
+			"_01_appic":  "Enter your Phones",
+			"_02_caspr":  "Enter your Phones"
+		},
+		"primary_phone_id": "_000_012_001",
+		"primary_phone_title": {
+			"_00":  "Primary Phone Number",
+			"_01_appic":  "Primary Phone Number",
+			"_02_caspr":  "Primary Phone Number"
+		},
+		"alt_phone_id": "_000_012_001",
+		"alt_phone_title": {
+			"_00":  "Alternate Phone Number",
+			"_01_appic":  "Alternate Phone Number",
+			"_02_caspr":  "Alternate Phone Number"
+		}
+		
+	},
+
+	"password": {
+		"attr_type": "password",
+		"attr_label": {
+			"_01_appic":  "Password",
+			"_02_caspr":  "Password_caspr"
+		}
+	}
+
+}

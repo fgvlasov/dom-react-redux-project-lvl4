@@ -1,0 +1,234 @@
+{
+		"attribute_template_header": 	{
+									"default":"HEADER_01",
+									"appic": "PL_HEADER_01",
+									"dentres": "PL_HEADER_01",
+                                    "appcn": "PL_HEADER_01",
+                                    "agcpd": "PL_HEADER_01",
+                                    "medphys": "PL_HEADER_01",
+									"ulnmatch": "PL_HEADER_01",
+                                    "pharmacy": "PL_HEADER_01",
+                                    "ormatch": "PL_HEADER_01",
+                                    "caspr": "PL_HEADER_01",
+                                    "ssobreast": "PL_HEADER_01",
+									"osteo": "PL_HEADER_01"
+								},
+		"attribute_template_body": 	{
+									"default":"FIELD_01_01",
+									"appic": "PL_FIELD_01_01",
+									"dentres": "PL_FIELD_01_01",
+                                    "appcn": "PL_FIELD_01_01",
+                                    "agcpd": "PL_FIELD_01_01",
+                                    "medphys": "PL_FIELD_01_01",
+									"ulnmatch": "PL_FIELD_01_01",
+                                    "ormatch": "PL_FIELD_01_01",
+                                    "caspr": "PL_FIELD_01_01",
+                                    "ssobreast": "PL_FIELD_01_01",
+                                    "pharmacy": "PL_FIELD_01_01",
+									"osteo": "PL_FIELD_01_01"
+								},
+		"attribute_template_tag": 	{
+									"default":"TAG_INPUT_01",
+									"appic": "PL_TAG_INPUT_01",
+									"dentres": "PL_TAG_INPUT_01",
+                                    "appcn": "PL_TAG_INPUT_01",
+                                    "agcpd": "PL_TAG_INPUT_01",
+                                    "medphys": "PL_TAG_INPUT_01",
+									"ulnmatch": "PL_TAG_INPUT_01",
+                                    "ormatch": "PL_TAG_INPUT_01",
+                                    "caspr": "PL_TAG_INPUT_01",
+                                    "ssobreast": "PL_TAG_INPUT_01",
+                                    "pharmacy": "PL_TAG_INPUT_01",
+									"osteo": "PL_TAG_INPUT_01"
+								},
+		"attribute_template_footer": 	{
+									"default":"FOOTER_01",
+									"appic": "PL_FOOTER_01",
+									"dentres": "PL_FOOTER_01",
+                                    "appcn": "PL_FOOTER_01",
+                                    "agcpd": "PL_FOOTER_01",
+                                    "medphys": "PL_FOOTER_01",
+									"ulnmatch": "PL_FOOTER_01",
+                                    "ormatch": "PL_FOOTER_01",
+                                    "caspr": "PL_FOOTER_01",
+                                    "ssobreast": "PL_FOOTER_01",
+                                    "pharmacy": "PL_FOOTER_01",
+									"osteo": "PL_FOOTER_01"
+								},
+		"attribute_db_column": 	{
+									"default":"UNDEFINED"
+								},
+		"attribute_title": 		{
+									"default":"000-Default attribute title",
+									"appic":"000-Default attribute_title appic",
+									"ulnmatch":"000-Default attribute_title ulnmatch",
+									"dentres":"000-Default attribute_title dentres",
+                                    "ormatch":"000-Default attribute_title ormatch",
+                                    "caspr":"000-Default attribute_title caspr",
+                                    "ssobreast":"000-Default attribute_title ssobreast",
+                                    "pharmacy":"000-Default attribute_title pharmacy",
+                                    "appcn":"000-Default attribute_title appcn",
+                                    "agcpd":"000-Default attribute_title agcpd",
+                                    "medphys":"000-Default attribute_title medphys",
+									"osteo":"000-Default attribute_title osteo"
+								},
+		"attribute_placeholder":{
+									"default":"000-Default attribute placeholder",
+									"appic": "",
+									"dentres": "",
+                                    "appcn": "",
+                                    "agcpd": "",
+                                    "medphys": "",
+									"ulnmatch": "",
+                                    "ormatch": "",
+                                    "caspr": "",
+                                    "ssobreast": "",
+                                    "pharmacy": "",
+									"osteo": ""
+								},
+		"attribute_type":		{
+									"default":"text"
+								},
+		"attribute_ng_model":	{
+									"comments":"it is attribute_value",
+									"default":""
+								},
+		"attribute_disabled":	{
+									"comments":"",
+									"default":"false"
+
+								},
+		"attribute_text_autofill":	{
+									"comments":"",
+									"default":"on"
+
+								},
+	    "attribute_pattern_01":	{
+	                                "comments":"",
+		                            "default":""
+
+	                            },
+	    "attribute_case_code_for_pattern_01":	{
+		                             "comments":"",
+		                             "default":""
+
+	                            },
+		"attribute_required":	{
+									"comments":"",
+									"default":"true"
+
+								},
+		"attribute_pattern":	{
+									"comments":"",
+									"default":"//"
+
+								},
+		"attribute_pattern_01":	{
+									"comments":"",
+									"default":""
+
+								},
+		"attribute_case_code_for_pattern_01":	{
+									"comments":"",
+									"default":""
+
+								},
+		"arg_select_numbers_start":	{
+									"comments":"",
+									"default":"0"
+
+								},
+		"arg_select_numbers_end":	{
+									"comments":"",
+									"default":"0"
+
+								},
+        "arg_checkbox_db_set_opt_code":{
+          "comments":"for Nms_Form::getOptForSelect",
+          "default":"empty"
+        },
+
+		"arg_select_db_set_opt_code":{
+									"comments":"for Nms_Form::getOptForSelect",
+									"default":"empty"
+								},
+
+
+        "arg_select_db_set_field_name":{
+                                    "comments":"for Nms_Form::getOptForSelect",
+                                    "default":{"id":"id","name":"name"}
+                                },
+
+        "arg_select_from_array":{
+                                    "comments":"For select from array",
+                                    "default":{"select_from_array_key1":"select_from_array_value1"}
+                                },
+
+        "arg_radio_from_array":{
+                                    "comments":"For radio from array",
+                                    "default":{"radio_from_array_key1":"radio_from_array_value1"}
+                                },
+        "arg_checkbox_list_parsefield_use_array":{
+                                    "comments":"For multi-select checkboxes that can be driven from DB or Array",
+                                    "default":""
+                                },
+
+		"arg_ng_select_db_onselect_action_code":{
+									"comments":"",
+									"default":"empty"
+								},
+
+		"format_in__uppercase":	{
+									"comments":"Make a string uppercase | for Nms_Db::formatIn",
+									"default":"false"
+								},
+
+		"format_in__lowercase":	{
+									"comments":"Make a string lowercase | for Nms_Db::formatIn",
+									"default":"false"
+								},
+
+		"format_in__takeout_whitespaces":{
+									"comments":"for Nms_Db::formatIn",
+									"default":"false"
+								},
+
+		"format_out__postal_code":{
+									"comments":"for Nms_Db::formatOut",
+									"default":"false"
+								},
+
+		"pl_attribute_class": {
+									"default": "pl_attribute_classname"
+								},
+		"pl_attribute_header_class": {
+									"default": "pl_attribute_header_classname"
+								},
+		"pl_tooltip": {
+						"default": ""
+		},
+		"pl_required_note" : {
+							"default": ""
+		},
+		"title_field_style" : {
+							"default": "h1"
+		},
+		"textarea_rows" : {
+			"default": 5
+		},
+		"textarea_cols" : {
+			"default": 50
+		},
+		"attribute_file_accept" : {
+			"default": ""
+		},
+		"attribute_file_max_size": {
+			"default": "0"
+		},
+		"arg_select_from_hours_array": {
+			"default":{"select_from_array_key1":"select_from_array_value1"}
+		},
+		"arg_select_from_minutes_array": {
+			"default":{"select_from_array_key1":"select_from_array_value1"}
+		}
+	}
