@@ -19,6 +19,7 @@ export default function Layout({ children }) {
       justifyContent={"center"}
       flexDirection="column"
       alignContent="center"
+      bg="bgCanvas"
     >
       <Head>
         <title>NatMatch Version2</title>
