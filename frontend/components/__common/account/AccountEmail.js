@@ -28,9 +28,9 @@ export default function AccountEmail({ ...props }) {
   const [isTyped, setIsTyped] = useState(true);
 
   useEffect(() => {
-    inputEmailConf == inputEmail ? setIsTyped(false) : setIsTyped(true);
+    inputEmailConf === inputEmail ? setIsTyped(false) : setIsTyped(true);
   }, [inputEmailConf, inputEmail]);
-
+  console.log(inputEmailConf);
   return (
     <Stack spacing={4} py={2}>
       <FormControl>

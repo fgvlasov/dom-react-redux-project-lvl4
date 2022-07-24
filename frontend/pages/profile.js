@@ -9,14 +9,16 @@ export default function Privacy() {
       <Heading as="h1">Profile</Heading>
 
       <CardClosed title="Track information">
+        <CardForm />
+      </CardClosed>
+    </>
+  );
+}
+/*
         <TrackInfoBlock title="Match Code Number:" info="3441" button="none" />
         <TrackInfoBlock
           title="Track description:"
           info="PMSR/RRA"
           button="Edit"
         />
-        <CardForm />
-      </CardClosed>
-    </>
-  );
-}
+		 */

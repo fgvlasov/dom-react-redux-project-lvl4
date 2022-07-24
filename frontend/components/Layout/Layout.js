@@ -2,6 +2,9 @@ import Head from "next/head";
 import Navbar from "./Navbar.js";
 import NavMenu from "./NavMenu";
 import Footer from "./Footer.js";
+import { useState, useEffect } from "react";
+import { userService } from "services";
+import { useRouter } from "next/router";
 import { Stack, Box, HStack, Select } from "@chakra-ui/react";
 import { useMatchContext } from "../../context/match";
 
@@ -13,6 +16,48 @@ export default function Layout({ children }) {
     //console.log(event.target.value);
     setMatch(event.target.value);
   }
+
+  const [authorized, setAuthorized] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    // run auth check on initial load
+    authCheck(router.asPath);
+
+    // set authorized to false to hide page content while changing routes
+    const hideContent = () => setAuthorized(false);
+    router.events.on("routeChangeStart", hideContent);
+
+    // run auth check on route change
+    router.events.on("routeChangeComplete", authCheck);
+
+    // unsubscribe from events in useEffect return function
+    return () => {
+      router.events.off("routeChangeStart", hideContent);
+      router.events.off("routeChangeComplete", authCheck);
+    };
+  }, []);
+
+  function authCheck(url) {
+    // redirect to login page if accessing a private page and not logged in
+    const publicPaths = ["/auth/login"];
+    const publicPathsSignup = ["/auth/signup"];
+    const path = url.split("?")[0];
+    if (
+      !userService.userValue &&
+      (!publicPaths.includes(path) || !publicPathsSignup.includes(path))
+    ) {
+      //console.log(path);
+      setAuthorized(false);
+      router.push({
+        pathname: "/auth/login",
+        query: { returnUrl: router.asPath },
+      });
+    } else {
+      setAuthorized(true);
+    }
+  }
+
   return (
     <Box
       display="flex"
@@ -33,7 +78,7 @@ export default function Layout({ children }) {
           direction={["column", "row"]}
           justifyContent={"center"}
         >
-          {showMenu && (
+          {authorized && (
             <Box className="leftMenuNav" display={{ base: "none", md: "flex" }}>
               <NavMenu w={["100%", "25%"]} />
             </Box>
@@ -43,7 +88,7 @@ export default function Layout({ children }) {
             p={{ base: "5", md: "10" }}
             w={{ base: "100%", md: "75%" }}
           >
-            {showMenu && (
+            {authorized && (
               <Select
                 placeholder="Select match"
                 variant="filled"

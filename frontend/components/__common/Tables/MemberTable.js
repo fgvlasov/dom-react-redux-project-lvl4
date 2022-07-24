@@ -36,7 +36,7 @@ export default function MemberTable({ ...props }) {
           <Th>Status</Th>
           <Th>Email</Th>
           <Th>Role</Th>
-          <Th>Rating</Th>
+
           <Th></Th>
         </Tr>
       </Thead>
@@ -71,11 +71,7 @@ export default function MemberTable({ ...props }) {
             <Td>
               <Text color="muted">{member.role}</Text>
             </Td>
-            <Td>
-              <Text color="muted">
-                <Rating defaultValue={member.rating} size="xl" />
-              </Text>
-            </Td>
+
             <Td>
               <HStack spacing="1">
                 <IconButton
