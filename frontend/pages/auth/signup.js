@@ -1,9 +1,9 @@
-import FormLogin from "components/__common/FormLogin";
+import FormSignup from "components/__common/FormSignup";
 
 export default function Login() {
   return (
     <>
-      <FormLogin />
+      <FormSignup />
     </>
   );
 }

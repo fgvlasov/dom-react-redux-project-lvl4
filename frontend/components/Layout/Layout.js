@@ -49,10 +49,15 @@ export default function Layout({ children }) {
     ) {
       //console.log(path);
       setAuthorized(false);
-      router.push({
-        pathname: "/auth/login",
-        query: { returnUrl: router.asPath },
-      });
+      if (
+        path != "/auth/login" &&
+        path != "/auth/signup" &&
+        path != "/auth/forgot"
+      )
+        router.push({
+          pathname: "/auth/login",
+          query: { returnUrl: router.asPath },
+        });
     } else {
       setAuthorized(true);
     }

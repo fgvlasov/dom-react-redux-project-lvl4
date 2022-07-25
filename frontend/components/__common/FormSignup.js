@@ -137,7 +137,7 @@ export default function Home() {
                   Remember me?
                 </Field>
                 <Button type="submit" colorScheme="purple" isFullWidth>
-                  Login
+                  Sign Up
                 </Button>
               </VStack>
             </form>
