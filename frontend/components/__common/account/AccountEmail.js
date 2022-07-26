@@ -4,33 +4,25 @@ import {
   Stack,
   Button,
   Box,
-  InputLeftAddon,
   FormControl,
-  InputLeftElement,
-  InputRightElement,
-  FormHelperText,
-  Input,
-  InputRightAddon,
-  Text,
   AlertDialog,
   AlertDialogBody,
-  AlertDialogFooter,
-  AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
-import { InputText } from "../InputText";
+import InputText from "../InputText";
 
 export default function AccountEmail({ ...props }) {
   const [inputEmail, setInputEmail] = useState("");
   const [inputEmailConf, setInputEmailConf] = useState("");
-  const [isTyped, setIsTyped] = useState(true);
+  const [isTyped, setIsTyped] = useState(false);
 
   useEffect(() => {
-    inputEmailConf === inputEmail ? setIsTyped(false) : setIsTyped(true);
-  }, [inputEmailConf, inputEmail]);
-  console.log(inputEmailConf);
+    inputEmailConf !== "" &&
+      (inputEmailConf == inputEmail ? setIsTyped(true) : setIsTyped(false));
+  }, [inputEmail, inputEmailConf]);
+
   return (
     <Stack spacing={4} py={2}>
       <FormControl>
@@ -39,8 +31,9 @@ export default function AccountEmail({ ...props }) {
           label={props.label_email_new}
           labelPosition="left"
           placeholder={props.placeholder_email_new}
-          leftElement="FaUserAlt"
+          leftElement="EmailIcon"
           variant="outline"
+          value={inputEmail}
           onChange={(event) => setInputEmail(event.target.value)}
         />
         <InputText
@@ -49,13 +42,14 @@ export default function AccountEmail({ ...props }) {
           labelPosition="left"
           placeholder={props.placeholder_email_confirm}
           helperText=""
-          leftElement="FaUserAlt"
+          leftElement="EmailIcon"
           isDisabled="false"
           isInvalid="false"
           isReadOnly="false"
           isRequired="false"
           size="md"
           variant="outline"
+          value={inputEmailConf}
           onChange={(event) => setInputEmailConf(event.target.value)}
         />
       </FormControl>
@@ -67,7 +61,7 @@ export default function AccountEmail({ ...props }) {
         </AlertDialogOverlay>
       </AlertDialog>
       <Box alignItems="end" align="flex-start" my={2}>
-        <Button type="submit" disabled={isTyped}>
+        <Button type="submit" disabled={!isTyped}>
           Save
         </Button>
       </Box>
